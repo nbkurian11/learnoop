@@ -1,23 +1,35 @@
-# learnoop
+# LearnOOP 📚
 
-Building a learning platform for OOP.
+An interactive platform for mastering Object Oriented Programming through structured lessons, in-browser coding, and active recall quizzes.
 
-LearnOOP v2 Tech Stack:
-Frontend:
+## The Problem
+Most students struggle with OOP not because they're incapable, but because passive reading and note-taking don't work. LearnOOP bridges the gap between theory and understanding through hands-on practice.
 
-React + Vite
-Tailwind CSS
-Monaco Editor (code editor in lessons)
+## Features
+- 12 structured OOP lessons with explanations and diagrams
+- In-browser Java code editor powered by Monaco
+- Active recall quizzes — MCQ and coding challenges
+- Progress tracking per user
+- User authentication — sign up and track your journey
+- No signup required to browse lessons
 
-Backend:
+## Tech Stack
+**Frontend:** React + Vite, Tailwind CSS, Monaco Editor
 
-Node.js + Express
+**Backend:** Node.js + Express
 
-Database + Auth + Storage:
+**Database & Auth:** Supabase (PostgreSQL + Authentication)
 
-Supabase (PostgreSQL, authentication, file storage)
+**Deployment:** Vercel (frontend) · Railway (backend)
 
-Deployment:
+## Live Demo
+Coming soon
 
-Vercel (frontend)
-Railway (backend)
+## Setup
+1. Clone the repo
+2. `cd frontend && npm install`
+3. Create a `.env` file with your Supabase credentials
+4. `npm run dev`
+
+## Status
+🔨 Currently in development
