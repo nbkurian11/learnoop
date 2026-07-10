@@ -1,4 +1,4 @@
-# LearnOOP 📚
+# LearnOOP 
 
 An interactive platform for mastering Object Oriented Programming through structured lessons, in-browser coding, and active recall quizzes.
 
@@ -32,4 +32,4 @@ Coming soon
 4. `npm run dev`
 
 ## Status
-🔨 Currently in development
+Currently in development
