@@ -2,61 +2,73 @@ import { Link } from 'react-router-dom'
 
 const lessons = [
   {
+    id: 1,
     title: 'Introduction to OOP',
     description: 'Learn the core ideas behind object-oriented programming and why they matter.',
     difficulty: 'Beginner',
   },
   {
+    id: 2,
     title: 'Classes and Objects',
     description: 'Create blueprints with classes and bring them to life as objects.',
     difficulty: 'Beginner',
   },
   {
+    id: 3,
     title: 'Constructors',
     description: 'Set up object state with constructors and sensible defaults.',
     difficulty: 'Beginner',
   },
   {
+    id: 4,
     title: 'Encapsulation',
     description: 'Protect data and expose clean, intentional ways to use an object.',
     difficulty: 'Intermediate',
   },
   {
+    id: 5,
     title: 'Inheritance',
     description: 'Reuse and extend behavior by building relationships between classes.',
     difficulty: 'Intermediate',
   },
   {
+    id: 6,
     title: 'Polymorphism',
     description: 'Write flexible code that works with objects through a shared interface.',
     difficulty: 'Intermediate',
   },
   {
+    id: 7,
     title: 'Abstraction',
     description: 'Focus on what an object does while hiding implementation details.',
     difficulty: 'Intermediate',
   },
   {
+    id: 8,
     title: 'Interfaces',
     description: 'Define dependable contracts that classes can implement.',
     difficulty: 'Intermediate',
   },
   {
+    id: 9,
     title: 'Generics',
     description: 'Build reusable, type-safe structures that work with many data types.',
     difficulty: 'Advanced',
   },
   {
+    id: 10,
     title: 'Recursion',
     description: 'Solve complex problems by breaking them into smaller versions of themselves.',
     difficulty: 'Advanced',
   },
   {
+    id: 11,
     title: 'Exception Handling',
     description: 'Anticipate errors and keep applications resilient when problems arise.',
     difficulty: 'Advanced',
   },
   {
+    id: 12,
     title: 'Collections',
     description: 'Organize and work efficiently with groups of related objects.',
     difficulty: 'Advanced',
@@ -109,12 +121,12 @@ function Lessons() {
               </div>
               <h2 className="mt-6 text-xl font-semibold text-white">{lesson.title}</h2>
               <p className="mt-3 leading-6 text-gray-400">{lesson.description}</p>
-              <button
-                type="button"
+              <Link
+                to={`/lessons/${lesson.id}`}
                 className="mt-auto pt-6 text-left text-sm font-semibold text-teal-400 transition hover:text-teal-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-teal-400 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-900"
               >
                 Start Lesson <span aria-hidden="true">&rarr;</span>
-              </button>
+              </Link>
             </article>
           ))}
         </section>
